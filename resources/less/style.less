@@ -1,0 +1,201 @@
+@my-yellow: #FFD561;
+@my-purple: #9E7B9B;
+@small-opacity-purple: rgba(158, 123, 155, 0.75);
+@big-opacity-purple: rgba(158, 123, 155, 0.6);
+@dark-text: #311847;
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Podkova, serif;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    color: white;
+    font-size: 50px;
+    height: 75px;
+    width: 600px;
+    margin-top: 120px;
+    font-weight: normal;
+}
+
+hr {
+    height: 1px;
+    border-width: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.header {
+    position: static;
+    height: 100px;
+    width: 100%;
+    color: white;
+
+    .container {
+        display: flex;
+        font-size: 24px;
+
+            .menu {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                margin: 0 30px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+    }
+}
+
+
+.col-6 {
+    display: flex;
+    justify-content: center;
+}
+
+.poster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: @big-opacity-purple;
+    color: white;
+    font-size: 24px;
+    height: 650px;
+    width: 310px;
+    border-radius: 15px;
+    margin-top: 40px;
+
+    .name {
+        display: flex;
+        justify-content: center;
+        font-size: 34px;
+        text-transform: uppercase;
+        height: 180px;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    a {
+        background-color: @my-yellow;
+        color: @dark-text;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        border-radius: 50px;
+        width: 250px;
+        height: 60px;
+    }
+
+    a:hover {
+        border-bottom: 10px solid @small-opacity-purple;
+        text-decoration: underline;
+        transition: 0.3s all;
+    }
+}
+
+.posters-block {
+    height: 900px;
+}
+
+.all-posters {
+    height: 1700px;
+}
+
+
+.all {
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+
+.poster-main-info {
+    height: 1000px;
+
+    .container {
+
+        h1 {
+            height: 120px;
+            margin-top: 50px;
+        }
+
+        .row {
+            margin-top: 100px;
+
+            .col-lg-6 {
+                .block {
+                    display: flex;
+                    align-items: center;
+                    height: 700px;
+                    width: 100%;
+                    border-radius: 15px;
+                    background-color: @big-opacity-purple;
+
+                    img {
+                        height: 85%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .full-poster-info {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 30px;
+                    margin-left: 60px;
+
+                    .written-info {
+                        align-items: center;
+                        width: 100%;
+
+                        p {
+                            color: white;
+                            font-size: 30px;
+                            margin-left: 30px;
+                        }
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                        }
+
+                        a:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
